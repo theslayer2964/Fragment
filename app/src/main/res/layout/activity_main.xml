@@ -15,28 +15,27 @@
         app:layout_constraintStart_toEndOf="@+id/txtData"
         app:layout_constraintTop_toTopOf="@+id/txtData" />
 
+
     <fragment
         android:id="@+id/frag_Student"
         android:name="com.example.th06_fragment.StudentFragment"
         android:layout_width="100dp"
         android:layout_height="100dp"
-
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="92dp"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         tools:layout="@layout/fragment_student">
 
     </fragment>
-
 
     <fragment
         android:id="@+id/frag_Blank"
         android:name="com.example.th06_fragment.BlankFragment"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnClick"
         tools:layout="@layout/fragment_blank">

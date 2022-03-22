@@ -9,7 +9,7 @@
         android:id="@+id/txtName_fragmentBlank"
         android:layout_width="269dp"
         android:layout_height="376dp"
-        android:text="Fragmrnt_Blank"
+        android:text="Fragment_Blank"
         android:textColor="#FFEB3B"/>
 
     <androidx.fragment.app.FragmentContainerView

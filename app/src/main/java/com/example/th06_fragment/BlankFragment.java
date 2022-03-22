@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +16,10 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class BlankFragment extends Fragment {
+
+    private TextView txt_FragmentBlank;
+    private Button btnClick_Student;
+    private TextView txt_Student;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +65,10 @@ public class BlankFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blank, container, false);
+        View view = inflater.inflate(R.layout.fragment_blank, container, false);
+        txt_FragmentBlank = view.findViewById(R.id.txtName_fragmentBlank);
+
+
+        return view;
     }
 }
