@@ -24,7 +24,7 @@ public class StudentFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    private EditText txtName_Blank;
+    private TextView txtName_Blank;
     private View view_Student;
     private TextView txtName_Student;
     private Button btnClick_Student;
@@ -71,13 +71,14 @@ public class StudentFragment extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_student, container, false);
         view_Student = view.findViewById(R.id.view_Student);
-        txtName_Blank = view.findViewById(R.id.txtName_fragmentBlank);
+
         txtName_Student = view.findViewById(R.id.txtName_Student);
         btnClick_Student = view.findViewById(R.id.btnClick_Student);
 
         btnClick_Student.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                txtName_Blank = getActivity().findViewById(R.id.txtName_fragmentBlank);
                 txtName_Blank.setText(txtName_Student.getText().toString());
             }
         });
